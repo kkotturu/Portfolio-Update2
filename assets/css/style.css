@@ -1,189 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
 
-body{
-    font-family: 'Times New Roman', Times, serif;
-    background-image: url("../images/background.jpg");
-}
-
-.content{
-    background-color: rgba(255, 255, 255,.8);
-    height: fit-content;
-    width: fit-content;
-    padding-left: 3%;
-    padding-right: 3%;
-    margin: 0 auto;
+* {
+    color: black;
 }
 
-#topTitle{
-    font-size: 32px;
-    cursor: pointer;
-}
-.dropdownItems{
-    background-color: white ;
-    
-}
-.dropdownItems:hover{
-    background-color: rgb(205, 205, 205);
-}
-/* Intro styling */
-#intro-headText, #about-headText, #portfolio-headText{
-    margin-top: 20px;
-    padding-top: 2px;
-    font-size: 32px;
-    color:#c51162;
-}
-#intro-text{
-    font-size: 24px;
-    line-height: 1.5;
-    padding-bottom: 5%;
-    color: #c51162;
+html, body {
+    background: #acd2d2;
+    height: 100%;
 }
 
-/* About styling */
-#about-text{
-    font-size: 24px;
-    line-height: 1.25;
-    padding-bottom: 5%;
-    color:#c51162;
+h1 {
+    font-family:'Tangerine', serif;
+    font-weight: bold;
+    color: black;
 }
 
-/* contact styling */
-#contact-headText{
-    margin-top: 20px;
-    padding-top: 2%;
-    font-size: 32px;
-    padding-bottom: 2%;
-    padding-right: 2%;
-    padding-left: 2%;
-    color:#c51162;
-}
-.contact-text{
-    font-size: 24px;
-    line-height: 1.25;
-    padding-right: 2%;
-    padding-left: 2%;
-    }
-
-.iconImage{
-    margin-top: 5%;
-    width: 160px;
-    height: 160px;
-    padding-bottom: 5%;
-    padding-right: 2%;
-    padding-left: 2%;
-    cursor: pointer;
-}
-
-.card{
-    width: 90%;
-    border-radius: 50px;
-    color:#c51162;
-}
-
-.card .card-content{
-    padding: 15px;
-    color:#c51162;
-}
-
-.card-image{
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-}
-
-.row .col{
-    padding: 0;
-}
-
-.card .card-image .card-title {
-    position: absolute;
-    right: 0;
-    margin: auto;
-    font-size:18px;
-}
-
-.card-title{
-    padding:50px;
+.navbar-dark .navbar-brand, .nav-item {
+    font-size: 40px;
+    font-family: 'Tangerine', serif;
     color: white;
+    text-shadow: 4px 4px 4px #aaa;
 }
 
-.card-textcontent{
-    font-size: 16px;
+.navbar-dark .navbar-brand {
+    font-size: 50px;
 }
 
-p{
-   font-size:16px;
-   margin-top: 15px; 
-   margin-bottom: 5px;
+.container {
+    margin-top: 45px;
+    margin-bottom: 65px;
+    text-align: center;
 }
 
-a{
-    font-size:24px;
-    padding:10px;
+img {
+    width: 200px;
+    height: 150px;
 }
 
-img{
-    width:200px;
-    height:200px;
+.square_image {
+    width: 250px;
+    height: 280px;
+    border-radius: 50%;
+
 }
 
-/* media queries*/
-@media only screen and (max-width: 570px){
-    #portfolio-headText{
-        font-size: 4.5em;
-    }
-    #contact-headText{
-        font-size: 4.5em;
-    }
-    .contact-text{
-        font-size: 1.55em;
-    }
-    #about-text{
-        font-size: 1.55em;
-    }
-    #about-headText{
-        font-size: 4.5em;
-    }
-    #topTitle{
-        font-size: 1.5em;
-    }
-    #intro-headText{
-        font-size: 8.5em;
-    }
-    #intro-text{
-        font-size: 1.65em;
-    }
-    .ourImage{
-        width: 8.5em;
-        height: 8.5em;
-    }
-    
+.paragraph {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+    line-height: 1.6em;
+    font-family: 'Courier New', Courier, monospace;
+    color:black;
 }
-@media only screen and (max-width: 350px){
-    #portfolio-headText{
-        font-size: 4em;
-    }
-    #contact-headText{
-        font-size: 4em;
-    }
-    .contact-text{
-        font-size: 1.40em;
-    }
-    #topTitle{
-        font-size: 1.5em;
-    }
-    #intro-headText{
-        font-size: 8em;
-    }
-    #intro-text{
-        font-size: 1.5em;
-    }
-    #about-text{
-        font-size: 1.35em;
-    }
-    #about-headText{
-        font-size: 4em;
-    }
-    .ourImage{
-        width: 6.5em;
-        height: 6.5em;
-    }
+
+.container-grid {
+    display: flex;
+    flex-wrap: wrap
 }
+
+.contact-form {
+    width: 80%;
+}
+
+
+.port-cards {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000066;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.wrapper > h1 {
+    padding: 20px;
+    margin: 40px;
+    font-size: 2.5rem;
+}
+
+.wrapper > p {
+    font-size: 1.5rem;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+
