@@ -44,6 +44,15 @@ img {
 
 }
 
+#img-border{
+    border-right: black 4px solid;
+    padding: 4px;
+}
+
+#img-style{
+    margin-bottom: none;
+}
+
 .paragraph {
     text-align: center;
     font-size: 1.2em;
